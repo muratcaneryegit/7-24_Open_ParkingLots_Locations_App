@@ -5,7 +5,7 @@ counties=istanbulpark['COUNTY_NAME'].unique()
 county=st.sidebar.selectbox("Choose County",counties)
 time24=st.sidebar.checkbox("24 Hour")
 if time24:
-    istanbulpark=istanbulpark[istanbulpark['WORKING_TIME']=="24 Hour"]
+    istanbulpark=istanbulpark[istanbulpark['WORKING_TIME']=="24 Saat"]
 istanbulpark=istanbulpark[istanbulpark['COUNTY_NAME']==county]
 df=istanbulpark[['LONGITUDE','LATITUDE']]
 df.columns=["lon","lat"]
